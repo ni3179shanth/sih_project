@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create-Page</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        font-size: 18px;
+        color: black;
+        background-color: grey;
+
+    }
+    
+    button:hover{
+        background: rgb(119, 119, 223)  ;
+    }
+    button{
+        padding-right: 1rem;
+        border: none;
+        cursor: pointer;
+        
+        padding-left: 1rem;
+        border-radius: 20px;
+        color:black;
+        font-size: large;
+background: white;
+opacity: .6;
+border-top-left-radius: 5rem;
+border-bottom-left-radius:5rem ;
+text-align: center;
+box-shadow: 10px 10px 10px black;
+        height:3rem;
+        width: 6rem;}
+    
+     .krlogo {
+            width: 120px;
+    height: 80px;
+    position: absolute;
+    border-radius: 100px;
+    padding-bottom: 0.5mm;
+    opacity: .6;
+    margin-bottom: 40rem;
+        }
+        #contactform{
+            color: black;
+            padding: 10px;
+            display: inline-block;
+            margin-left: 19rem;
+            margin-top: 40px;
+           text-align: center;
+             width: 30rem;
+            height: 30rem; 
+            border: none;
+        }
+        textarea{
+            height: 50px;
+            width:17rem ;
+            border-radius: 10px;
+            
+            border-color:black ;
+            border: 2px solid;
+
+        }
+        #name{
+            color: black;
+           background-color: aliceblue;
+                        
+        }
+        #ID{
+            color: black;
+           background-color: aliceblue;
+                        
+        }
+        #mail{
+            color: black;
+           background-color: aliceblue;
+                        
+        }
+        #number{
+            color: black;
+           background-color: aliceblue;
+                        
+        }
+        #detail{
+            color: black;
+            opacity: .7;
+           background-color: aliceblue;
+                        
+        }
+        #credit{
+            color: black;
+           background-color: aliceblue;
+                        
+        }
+        input{
+            border: 2px solid ;
+            opacity: .8;
+            padding-left: 3px;
+            height: 36px;
+            width: 17rem;
+            border-radius: 10px;
+        }
+        .close{
+           padding: 2px;
+        border: solid;
+        border-color: gray;
+        padding-left: 1rem;
+        
+        border-top-left-radius:10px ;
+        color:black;
+        font-size: large;
+background: white;
+        height:28px;
+        border: 2px solid;
+        width: 16rem;
+        }
+
+        .mklogo {
+            width: 160px;
+            height: 90px;
+            border-radius: 10px;
+            padding: 2mm;
+            position: absolute;
+            top: 8px;
+            right: 60px;
+            
+        }
+</style>
+<body>
+    
+    <div class="container">
+    <a href="https://console.firebase.google.com/project/contactform-8aa02/database/contactform-8aa02-default-rtdb/data/~2Fcontactform~2F-NeKZR0oX7QzJIWbtskD" target="_blank" >  
+    <img class="krlogo" src="./left.PNG" alt=""></a>
+    <a href="./code.html" target="_blank">   <img class="mklogo" src="./right.PNG" alt=""></a> 
+        <form action="" id="contactform">
+          
+            <!--  -->
+            <div class="inputbox">
+               <p>ID:</p> <input type="text" id="ID" placeholder="Create ID " required="">
+
+            </div>
+            <!--  -->
+            <div class="inputbox">
+                <p>Name:</p> <input type="text" id="name" placeholder="Enter Name "required="">
+                
+            </div>
+            <!--  -->
+            <div class="inputbox">
+                <p>Gmail ID:</p> <input type="email" id="mail" placeholder="Enter Mail " required="">
+                
+            </div>
+            <!--  -->
+            <div class="inputbox">
+                <p>Number:</p> <input type="text" id="number" placeholder="Enter Phone number" required="">
+                
+            </div>
+            <!--  -->
+            <div class="inputbox">
+                <p>Detail:</p> <textarea class="close"  id="detail" cols="30" rows="10" placeholder="Components are recycled" required="">
+                </textarea>
+            </div>
+            <!--  -->
+            <div class="inputbox">
+                <p>Credit:</p><input type="text" id="credit" placeholder="Enter credit" required="">
+                
+            </div>
+            <!--  -->
+            <div class="inputbox">
+                <button type="submit" >Submit </button>
+                
+            </div>
+           
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./page.js"></script>
+</body>
+</html>

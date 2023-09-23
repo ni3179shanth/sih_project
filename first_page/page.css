@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+p{
+    color: beige;
+}
+.inputbox{
+    text-align: center;
+    
+}
+div{
+    padding: 10px;
+}

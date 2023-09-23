@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40400%3B500%3B600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+   
+    background-image: url(./wallpaperflare.com_wallpaper\ \(17\).jpg);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top:10px;
+    
+    background-color: white;
+
+}
+.swiper{
+    width: 100%;
+
+}
+.swiper-wrapper{
+    width: 100%;
+    opacity: .8;
+    
+    height: 30em;
+    display: flex;
+    align-items: center;
+   
+    
+
+}
+.card{
+    background-color: transparent;
+    width: 20em;
+    height: 90%;
+    background-color: white;
+    border-radius: 2em;
+    box-shadow: 0 0 2em black;
+    padding: 2em 1em;
+
+flex-direction: column;
+    display: flex;
+    align-items:center;
+}
+.swiper-slide:not(.swiper-slide-active){
+    filter: blur(1px);
+}
+.card_image{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid grey;
+    padding: 3px;
+    margin-bottom:2em;
+
+
+}
+.card_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit:cover;
+}
+.card_content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+.card_title{
+    font-size: 1.5em;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+
+}
+.card_text{
+text-align: center;
+font-size:1.1em;
+margin: 1em 0;
+
+
+}
+.card_btn{
+    background-color: gray;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight:600;
+    border: none;
+    padding: .5em;
+    border-radius: .5em;
+    margin-top: .5em;
+    cursor: pointer;
+}
+.hello{
+    margin-left: 27rem;
+    padding-left: 2px;
+}
+.one{
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    height: 3rem;
+    width: 5rem;
+    border-radius: 10px;
+}
+.two{
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    height: 3rem;
+    width: 5rem;
+    
+    border-radius: 10px;
+}
+.three{
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    height: 3rem;
+    width: 5rem;
+    border-radius: 10px;
+   
+}
+
+.one:hover{
+    background-color: black;
+    opacity: .7;
+    transition: 3s;
+}
+.two:hover{
+    background-color: black;
+    opacity: .7;
+    transition: 3s;
+}
+.three:hover{
+    background-color: black;
+    opacity: .7;
+    transition: 3s;
+}
